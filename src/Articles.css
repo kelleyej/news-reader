@@ -10,3 +10,15 @@ img {
     height: 180px; 
     width: 330px; 
 }
+
+@media screen and (max-width: 1024px) {
+    .article-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .article-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

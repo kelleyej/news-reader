@@ -8,7 +8,7 @@ export default function ArticleCard({ title, image, description, publishedAt }) 
     <section className='article-styling'>
     {(!image) ? <div className='no-image'><p>No image available.</p></div> : <img src={image} />}
     <h2>{title}</h2>
-    <p>{description}</p>
+    {(!description) ? <p>No description available for this article.</p> : <p>{description}</p>}
     <p>{publishedAt}</p>
 </section>
 </Link>
