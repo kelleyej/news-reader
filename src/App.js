@@ -17,7 +17,7 @@ function getTopHeadlines() {
   .then(res => res.json())
   .then(data => setAllArticles(data.articles))
 }
-
+console.log(allArticles)
   return (
     <div className="App">
       <NavBar />

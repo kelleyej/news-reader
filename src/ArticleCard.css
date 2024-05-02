@@ -1,0 +1,14 @@
+.no-image {
+    height: 180px; 
+    width: 330px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-styling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

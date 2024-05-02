@@ -5,14 +5,11 @@ export default function Articles({ allArticles }) {
     const articleGrid = allArticles.map(article => {
        return (
             <ArticleCard
-            id={Date.now()}
-            title={article.title}
             image={article.urlToImage}
+            title={article.title}
            description={article.description}
             publishedAt={article.publishedAt} 
            />
-          
-     
     ) 
     })
 

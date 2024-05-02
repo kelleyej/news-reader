@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
+import './ArticleCard.css';
 
-export default function ArticleCard({ title, image, description, publishedAt, id }) {
+export default function ArticleCard({ title, image, description, publishedAt }) {
 
     return (
     <Link to={`/articles/${title}`}>
-    <section >
+    <section className='article-styling'>
+    {(!image) ? <div className='no-image'><p>No image available.</p></div> : <img src={image} />}
     <h2>{title}</h2>
-    <img src={image} />
     <p>{description}</p>
     <p>{publishedAt}</p>
 </section>
