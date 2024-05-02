@@ -9,6 +9,11 @@
 img {
     height: 180px; 
     width: 330px; 
+    border-radius: 15px;
+}
+
+input {
+    margin-bottom: 25px; 
 }
 
 @media screen and (max-width: 1024px) {
