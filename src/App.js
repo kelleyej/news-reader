@@ -4,17 +4,17 @@ import { useState, useEffect } from 'react';
 import data from './mockdata';
 
 function App() {
-const [articles, setArticles] = useState([])
+const [allArticles, setAllArticles] = useState([])
 
 useEffect(() => {
-  setArticles(data)
+  setAllArticles(data)
 }, [])
-console.log(articles)
+console.log(allArticles)
 
   return (
     <div className="App">
       <NavBar />
-      <Articles />
+      <Articles allArticles={allArticles}/>
     </div>
   );
 }

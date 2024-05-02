@@ -1,5 +1,22 @@
-export default function Articles() {
+import './Articles.css';
+
+export default function Articles({ allArticles }) {
+    const articleGrid = allArticles.map(article => {
+       return (
+        <section >
+            <h2>{article.headline}</h2>
+            <img src={article.image} />
+            <p>{article.description}</p>
+            <p>{article.data}</p>
+        </section>
+        
+    ) 
+    })
+
     return (
-        <p1>test</p1>
+        <section className="article-container">
+            {articleGrid}
+        </section>
     )
+    
 }
