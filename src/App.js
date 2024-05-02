@@ -11,7 +11,6 @@ const [allArticles, setAllArticles] = useState([])
 useEffect(() => {
   setAllArticles(data)
 }, [])
-console.log(allArticles)
 
   return (
     <div className="App">
