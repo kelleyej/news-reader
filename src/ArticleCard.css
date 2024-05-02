@@ -18,3 +18,7 @@ a {
     text-decoration: none;
     color: #452c63;
 }
+
+.description {
+    width: 80%;
+}

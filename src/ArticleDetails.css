@@ -8,3 +8,7 @@ button {
     align-items: center;
     color: #452c63;
 }
+
+.content {
+    width: 70%;
+}
