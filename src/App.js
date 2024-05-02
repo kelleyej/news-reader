@@ -3,6 +3,7 @@ import Articles from './Articles';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ArticleDetails from './ArticleDetails';
+import NotFound from './NotFound';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ console.log(allArticles)
       <Routes>
         <Route path="/" element={ <Articles allArticles={allArticles}/> }/>
         <Route path="/articles/:title" element={ <ArticleDetails allArticles={allArticles}/> } />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       
     </div>
