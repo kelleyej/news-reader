@@ -23,11 +23,11 @@ export default function ArticleDetails({ allArticles }) {
         return (
         <div className='details-container'>
            <Link to="/"><button>⬅</button></Link>
-           <h2>{articleDetails[0].title}</h2>
+           <h2 className='title'>{articleDetails[0].title}</h2>
+           <p>{(new Date(articleDetails[0].publishedAt)).toLocaleString()}</p>
             {(!articleDetails[0].urlToImage) ? <div className='no-image'><p>No image available.</p></div> : <img src={articleDetails[0].urlToImage} />}
             <p className='content'>{articleDetails[0].content}</p>
-            <p>{(new Date(articleDetails[0].publishedAt)).toLocaleString()}</p> 
-            <p>{articleDetails[0].source.name}</p>
+            <p className='source'>Source: {articleDetails[0].source.name}</p>
         </div> 
     )
     }

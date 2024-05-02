@@ -22,3 +22,7 @@ a {
 .description {
     width: 80%;
 }
+
+h2 {
+    margin-bottom: 0; 
+}

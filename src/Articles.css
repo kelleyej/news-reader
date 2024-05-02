@@ -4,6 +4,8 @@
     text-align: center; 
     background-color: #a2a8d3;
     grid-gap: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 img {
@@ -14,6 +16,14 @@ img {
 
 input {
     margin-bottom: 25px; 
+    width: 220px;
+    border-radius: 20px;
+    border: none;
+    height: 20px;
+}
+
+::placeholder {
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

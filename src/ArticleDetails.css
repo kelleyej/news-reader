@@ -1,5 +1,7 @@
 button {
     cursor: pointer; 
+    width: 40px;
+    border: none;
 }
 
 .details-container {
@@ -11,4 +13,12 @@ button {
 
 .content {
     width: 70%;
+}
+
+.title {
+    width: 75%;
+}
+
+.source {
+    font-style: italic;
 }
