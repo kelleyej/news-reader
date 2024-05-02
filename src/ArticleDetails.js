@@ -14,7 +14,7 @@ export default function ArticleDetails({ allArticles }) {
         const specificArticle = allArticles.filter(article => article.title === articleTitle)
         setArticleDetails(specificArticle)
     }
- 
+
     if(articleDetails.length === 0){
         return (
             <p>Loading...</p> 
@@ -26,7 +26,7 @@ export default function ArticleDetails({ allArticles }) {
            <h2>{articleDetails[0].title}</h2>
             {(!articleDetails[0].urlToImage) ? <div className='no-image'><p>No image available.</p></div> : <img src={articleDetails[0].urlToImage} />}
             <p>{articleDetails[0].content}</p>
-            <p>{articleDetails[0].publishedAt}</p> 
+            <p>{(new Date(articleDetails[0].publishedAt)).toLocaleString()}</p> 
             <p>{articleDetails[0].source.name}</p>
         </div> 
     )
