@@ -1,0 +1,17 @@
+.error-heading {
+    font-size: 1.5em; 
+    color: #452c63;
+}
+
+.error-mess {
+    font-size: 1.8em; 
+    color: #452c63;
+    width: 75%; 
+    margin-top: 2px;
+}
+
+.err-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

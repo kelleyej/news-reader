@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import NotFound from '../NotFound/NotFound';
 import './App.css';
+import Error from '../Error/Error';
 
 function App() {
 const [allArticles, setAllArticles] = useState([])
@@ -29,11 +30,12 @@ console.log(allArticles)
   return (
     <div className="App">
       <NavBar />
+      {error ? <Error error={error}/> : 
       <Routes>
         <Route path="/" element={ <Articles allArticles={allArticles}/> }/>
         <Route path="/articles/:title" element={ <ArticleDetails allArticles={allArticles}/> } />
         <Route path="*" element={<NotFound />} />
-      </Routes>
+      </Routes>}
       
     </div>
   );
