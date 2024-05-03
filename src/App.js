@@ -14,11 +14,17 @@ useEffect(() => {
 }, [])
 
 function getTopHeadlines() {
-  fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=020fb8678e4a4f80a349b777eed308c6')
-  .then(res => res.json())
+  fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`)
+  .then(res => {
+    if(!res.ok){
+      console.log('not working')
+    } else {
+      return res.json()
+    }
+  }) 
   .then(data => setAllArticles(data.articles))
 }
-console.log(allArticles)
+
   return (
     <div className="App">
       <NavBar />
