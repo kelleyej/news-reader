@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# News Reader 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract
+This news application displays the top recent headlines in the United States. It shows you an image related to the news article, the headline, date and time published, and a description of the article. You can filter news articles by keywords in the headline. It also allows the user to click on a news article to get additional details, such as the content of the article. 
 
-## Available Scripts
+## Contributors 
+[Erin Kelley](https://github.com/kelleyej)
 
-In the project directory, you can run:
+## App Preview 
+<img width="1314" alt="Screenshot 2024-05-03 at 5 03 08 PM" src="https://github.com/kelleyej/news-reader/assets/120286689/787747ba-4785-4d5b-882c-fb603fb2ccf2">
+<img width="1272" alt="Screenshot 2024-05-03 at 5 03 44 PM" src="https://github.com/kelleyej/news-reader/assets/120286689/55be7f9c-294d-42f0-96f2-eb2ce563ecd1">
+<img width="1233" alt="Screenshot 2024-05-03 at 5 04 15 PM" src="https://github.com/kelleyej/news-reader/assets/120286689/c9905679-1a12-49ae-98d9-cd8e981813f1">
 
-### `npm start`
+## Installation Instructions 
+### Frontend
+1. Fork and clone this repo: https://github.com/kelleyej/news-reader
+2. cd into news-reader in your terminal
+3. Run `npm install` in your terminal to install all dependencies
+4. Run `npm start` to start up the frontend
+5. Run Cypress E2E testing: `npm run cypress`
+6. Click E2E Testing
+7. Click Start E2E Testing in Chrome
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Environment Variables
+- Create a `.env` file in the root directory.
+- Copy and paste REACT_APP_API_KEY=myApiKey in the .env file. 
+- Replace `myApiKey` with your API key from [get news API key](https://newsapi.org/) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used 
+![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat) ![React Router Badge](https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat) ![Cypress Badge](https://img.shields.io/badge/Cypress-69D3A7?logo=cypress&logoColor=fff&style=flat) 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Context 
+This application was created to simulate a take-home challenge given an 8-hour time limit. 
