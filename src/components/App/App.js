@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
 const [allArticles, setAllArticles] = useState([])
-
+const [error, setError] = useState(null)
 useEffect(() => {
   getTopHeadlines()
 }, [])
@@ -17,14 +17,15 @@ function getTopHeadlines() {
   fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`)
   .then(res => {
     if(!res.ok){
-      console.log('not working')
+      setError(`${res.status}`)
     } else {
       return res.json()
     }
   }) 
   .then(data => setAllArticles(data.articles))
+  .catch(error => setError(error.message))
 }
-
+console.log(allArticles)
   return (
     <div className="App">
       <NavBar />
