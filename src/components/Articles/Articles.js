@@ -1,5 +1,5 @@
 import './Articles.css';
-import ArticleCard from './ArticleCard';
+import ArticleCard from '../ArticleCard/ArticleCard';
 import { useState } from 'react';
 
 export default function Articles({ allArticles }) {

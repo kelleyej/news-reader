@@ -1,9 +1,9 @@
-import NavBar from './NavBar';
-import Articles from './Articles';
+import NavBar from '../../NavBar';
+import Articles from '../Articles/Articles';
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import ArticleDetails from './ArticleDetails';
-import NotFound from './NotFound';
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
+import NotFound from '../../NotFound';
 import './App.css';
 
 function App() {
