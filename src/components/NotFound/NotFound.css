@@ -10,3 +10,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.home {
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
