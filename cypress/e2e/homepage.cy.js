@@ -1,6 +1,6 @@
 describe('homepage', () => {
  beforeEach(() => {
-  cy.intercept('GET', `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Cypress.env('access_key')}`, {
+  cy.intercept('GET', `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Cypress.env('env').access_key}`, {
     statusCode: 200, 
     fixture: 'articles'
   }), 
