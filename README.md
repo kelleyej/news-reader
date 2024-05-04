@@ -24,8 +24,14 @@ This news application displays the top recent headlines in the United States. It
 ### Environment Variables
 - Create a `.env` file in the root directory.
 - Copy and paste REACT_APP_API_KEY=myApiKey in the .env file. 
-- Replace `myApiKey` with your API key from [get news API key](https://newsapi.org/) 
-
+- Replace `myApiKey` with your API key from [get news API key](https://newsapi.org/)
+- Create a `cypress.env.json` file in the root directory.
+- Copy and paste the following in the cypress.env.json file: `{
+  "env": {
+    "access_key": "myApiKey"
+    } }`
+- Replace `myApiKey` with your API key from above.
+  
 ## Technologies Used 
 ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat) ![React Router Badge](https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=flat) ![Cypress Badge](https://img.shields.io/badge/Cypress-69D3A7?logo=cypress&logoColor=fff&style=flat) 
 
