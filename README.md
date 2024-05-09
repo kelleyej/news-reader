@@ -37,3 +37,7 @@ This news application displays the top recent headlines in the United States. It
 
 ## Context 
 This application was created to simulate a take-home challenge given an 8-hour time limit. 
+
+## Future Improvements
+- Include international news articles, possibly with the addition of the World News API. 
+- Include additional features, such as recipes and/or crossword puzzles. 
